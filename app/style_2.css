@@ -1,0 +1,35 @@
+.astronaute {
+	width: 100vw;
+	height: 50vh;
+}
+
+.btn-1 {
+	width: 500px !important;
+	height: 120 !important;
+	margin-bottom:60px !important;
+	background-color: #4F9AC3 !important;
+    font-size: 40px !important;
+    border-radius: 20px !important;
+ }
+
+ .btn-2 {
+	width: 500px !important;
+	height: 120 !important;
+	margin-bottom:60px !important;
+	background-color: #2D4176 !important;
+	font-size: 40px !important;
+	border-radius: 20px !important;
+ }
+
+ .btn-3 {
+	width: 500px !important;
+	height: 120 !important;
+	background-color: #142140 !important;
+	font-size: 40px !important;
+	border-radius: 20px !important;
+ }
+
+ .buttons {
+ 	margin-top: 200px !important; 
+ 	margin-left: 220px !important;
+ }

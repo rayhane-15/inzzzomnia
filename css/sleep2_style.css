@@ -1,0 +1,101 @@
+.sleep {
+	width: 100vw !important;
+	height: 50vw !important;
+	-webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+    filter: blur(3px);
+	background: rgb(0, 0, 0) !important;
+	background: rgba(0, 0, 0, 0.99)!important; 
+}
+
+.foreground {
+	backdrop-filter: blur(10px) !important;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.text {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 185px;
+    width: 100%;
+		color: white !important;
+	  font-size: 100px!important;
+	font-family: 'Noto Sans Jp', serif !important;
+}
+
+.main-btn {
+	width: 450px !important;
+	height: 160 !important;
+	margin-top:100px !important;
+	margin-left: 245px !important;
+	background-color: #3178A0 !important;
+  font-size: 70px !important;
+  font-family: 'Noto Sans Jp', serif !important;
+	border-radius: 20px !important;
+ }
+
+
+.first-btn {
+	width: 750px !important;
+	height: 150 !important;
+	background-color: #075C62 !important;
+  font-size: 60px !important;
+  font-family: 'Noto Sans Jp', serif !important;
+	border-radius: 20px !important;
+	
+ }
+
+.second-btn {
+	width: 750px !important;
+	height: 150 !important;
+	margin-top:40px !important;
+	background-color: #17786C !important;
+  font-size: 70px !important;
+  font-family: 'Noto Sans Jp', serif !important;
+	border-radius: 20px !important;
+	
+ }
+
+.third-btn {
+	width: 750px !important;
+	height: 150 !important;
+	margin-top:40px !important;
+	background-color: #426D80 !important;
+  font-size: 70px !important;
+  font-family: 'Noto Sans Jp', serif !important;
+	border-radius: 20px !important;
+ }
+#reasonsDiv{
+	display: none;
+	margin-top: 50px !important;
+	margin-left:110px !important; 
+}
+
+h1 {
+	font-size: 55px !important;
+	margin-top: 95px !important;
+	padding-left:10px !important;
+	padding-right: 10px !important;
+	color: #184D58 !important;
+}
+
+h2 {
+	font-size: 60px !important;
+	margin-top: 95px !important;
+	padding-left:10px !important;
+	padding-right: 10px !important;
+	color: #184D58 !important;
+}
+
+.icon {
+  position: absolute !important;
+  left: 10px !important;
+  top: 10px !important;
+  color: white !important;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+}

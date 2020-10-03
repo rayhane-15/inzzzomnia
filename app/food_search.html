@@ -1,0 +1,119 @@
+<DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset ="utf-8">
+    <title>Inzzzomnia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="F.search_style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+
+  <body>
+    <section class="container is-fullhd">
+
+      <div class="image">
+      <img src="food.jpg" class="food"/>
+      <div class="foreground"/>
+      <div class="text">
+      Food Tracker
+      </div>
+      </div>
+      </div>
+
+      <div class="icon">
+    <a href="screen_2.html">
+    <span class = "icon is-large home-icon">
+      <i class="fas fa-home fa-3x"></i>
+    </span>
+    </a>
+  </div>
+   
+     <div class="container search_div">
+     <div class="field has-addons">
+      <div class="control ">
+      <input class="input is-primary food_input" id = "query" type="text"  
+      placeholder="Input the food name" />
+      </div>
+      <div calss="control">
+       <button class="button is-primary is-outlined search-btn"  id = "searchBtn"> 
+      Search
+     </button>
+     </div>
+   </div>
+    </div>
+     
+  
+     
+    
+
+     
+    
+    <div class="food_values">
+      The nutritional values of your food:
+    </div>
+    <div class = "Food_result">
+      <h1 class="food-name" id = "food_name"></h1>
+      <ul class="nutr-type" id = "nutr">
+        
+      </ul>
+    </div>
+    <div class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+    <a href="screen_2.html">
+      <span class = "icon is-large">
+      <i class="fas fa-home fa-3x"></i>
+    </span>
+    </a>
+  </div>
+</div>
+</div>
+  
+ 
+  </section>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript">
+
+
+    $(document).ready(function(){
+      var food_data = undefined;
+      $(".food_values").hide()
+      $(".result").hide()
+       $("#searchBtn").on("click",function(){
+          let data = {
+            app_id: "496832a3",
+            app_key: "d8a5aad4e6ecfebfdaa749587029ca2d",
+            ingr: $("#query").val()
+        }
+        
+        
+        $.get("https://api.edamam.com/api/food-database/v2/parser",data).then((resp) => {
+            food_data =  resp.parsed[0].food
+            $("#food_name").text = $("#query").val()
+            let nut_list = $("#nutr")
+
+            $.each(food_data.nutrients,function(key,value){
+
+                 nut_list.append('<li>' + key + ':' + food_data.nutrients[key] )
+            })
+            $(".food_values").show()
+            $(".result").show()
+
+        })
+
+
+
+
+       })
+
+    })
+
+
+
+
+  </script>
+
+

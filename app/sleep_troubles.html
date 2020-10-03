@@ -1,0 +1,72 @@
+<DOCTYPE html>
+<html>
+
+  <head>
+  	<meta charset="utf-8">
+  	<title>Inzzzomnia</title>
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  	<link rel="stylesheet" type="text/css" href="sleep2_style.css"/>
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400">
+  	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+
+  <body>
+  	<section class="container is-fullhd">
+  		<div class="image">
+  		<img src="astronaut_sleep.jpg" class="sleep"/>
+  		<div class="foreground"/>
+  		<div class="text">
+  		Sleep
+  		</div>
+  	</div>
+  </div>
+
+  <div class="icon">
+    <a href="screen_2.html">
+    <span class = "icon is-large home-icon">
+      <i class="fas fa-home fa-3x"></i>
+    </span>
+    </a>
+  </div>
+   
+  <div class="container has-text-centered">
+    <h1>
+    What is the reason of this diturbance?
+  	</h1>
+  	<h2>
+  	Please select one of these reasons
+  	</h2>
+  	<button class="button is-primary is-Medium is-fullwidth main-btn" id="reasonsBtn">
+  	Reasons
+  	</button>
+  
+   <div id="reasonsDiv" class="reasons">
+  	<a href="sleep_solution.html" class="button is-primary is-Medium is-fullwidth first-btn">
+  		Snoozing(Day/Night)
+  	</a>
+  	<a href="#" class="button is-primary is-Medium is-fullwidth second-btn">
+  		Microgravity
+  	</a>
+  	<a href="#" class="button is-primary is-Medium is-fullwidth third-btn">
+  		Loliness
+  	</a>  
+  </div>
+  </div>
+ 
+</section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  	<script type="text/javascript" >
+        $(document).ready(function(){
+           
+           $("#reasonsBtn").click(function(event){
+               $("#reasonsDiv").toggle()
+           });
+           
+          })
+
+        
+
+  	</script>
+ </body>
+
+</html>

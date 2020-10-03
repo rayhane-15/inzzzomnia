@@ -1,0 +1,78 @@
+
+
+.row-1 {
+	height: 300px;
+}
+
+.full-screen{
+	height: 100vh;
+}
+
+.hero{
+	background: #0F2027 !important;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027) !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.pres{
+	margin-bottom: 150px !important;
+}
+
+
+.pres .planet{
+position: absolute !important;
+right: 0px !important;
+bottom: 0px !important;
+width: 224px !important;
+height: 224px !important;
+}
+
+.pres .logo-title{
+    font-size: 5rem !important;
+}
+/*
+.pres .subtitle{
+    font-size: 3rem !important;
+}
+*/
+
+h1 {
+	color: white !important;
+	padding-left: 20px;
+}
+
+@include media-breakpoint-up(sm) {
+	.first-part {
+		font-size: 1,2rem;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.second-part-part {
+		font-size: 1,2rem;
+	}
+}
+
+.first-part {
+	color: white !important;
+	
+	margin-top: 30px;
+	padding-left: 10px;
+}
+
+.second-part {
+	color: white !important;
+	padding-left: 30px;
+	
+}
+
+.pres .start-button {
+	margin-top: 300px !important;
+	width: 300px !important;
+	height: 100px! important;
+	font-size: 50px !important;
+}
+
+
+

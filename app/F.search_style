@@ -1,0 +1,28 @@
+.sleep {
+	width: 100vw !important;
+	height: 50vw !important;
+	-webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+    filter: blur(3px);
+	background: rgb(0, 0, 0) !important;
+	background: rgba(0, 0, 0, 0.99)!important; 
+}
+
+.foreground {
+	backdrop-filter: blur(10px) !important;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.text {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 185px;
+    width: 100%;
+		color: white !important;
+	  font-size: 100px!important;
+	font-family: 'Noto Sans Jp', serif !important;
+}
